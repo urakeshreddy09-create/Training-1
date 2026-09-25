@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PulseFit - Fitness Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- ==================================================
+         SIDEBAR
+    =================================================== -->
+
+      <aside class="sidebar">
+        <!-- LOGO -->
+
+        <div class="logo">
+          <div class="logo-icon">P</div>
+
+          <span> Pulse<span>Fit</span> </span>
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+          <a href="#dashboard" class="nav-item active">
+            <span class="nav-icon">⌂</span>
+
+            <span> Dashboard </span>
+          </a>
+
+          <a href="#activity" class="nav-item">
+            <span class="nav-icon">◉</span>
+
+            <span> Activity </span>
+          </a>
+
+          <a href="#workouts" class="nav-item">
+            <span class="nav-icon">▣</span>
+
+            <span> Workouts </span>
+          </a>
+
+          <a href="#progress" class="nav-item">
+            <span class="nav-icon">♢</span>
+
+            <span> Progress </span>
+          </a>
+
+          <a href="#settings" class="nav-item">
+            <span class="nav-icon">⚙</span>
+
+            <span> Settings </span>
+          </a>
+        </nav>
+
+        <!-- SIDEBAR PROFILE -->
+
+        <div class="sidebar-profile">
+          <div class="mini-avatar">RR</div>
+
+          <div>
+            <strong> Rakesh </strong>
+
+            <small> Premium Member </small>
+          </div>
+        </div>
+      </aside>
+
+      <!-- ==================================================
+         MAIN CONTENT
+    =================================================== -->
+
+      <main class="main">
+        <!-- ==================================================
+             DASHBOARD
+        =================================================== -->
+
+        <section id="dashboard" class="page-section">
+          <!-- TOP HEADER -->
+
+          <header class="topbar">
+            <div>
+              <p class="eyebrow">FRIDAY, SEPTEMBER 25</p>
+
+              <h1>Good morning, Rakesh 👋</h1>
+
+              <p class="subtitle">Here's your fitness overview for today.</p>
+            </div>
+
+            <div class="top-actions">
+              <button class="notification">
+                ♢
+
+                <span></span>
+              </button>
+
+              <div class="header-avatar">RR</div>
+            </div>
+          </header>
+
+          <!-- DASHBOARD BENTO GRID -->
+
+          <div class="bento-grid">
+            <!-- PROFILE -->
+
+            <article class="card profile-card">
+              <div class="profile-top">
+                <div class="profile-image">RR</div>
+
+                <div class="active-status">
+                  <span></span>
+
+                  Active
+                </div>
+              </div>
+
+              <div class="profile-info">
+                <h2>Rakesh Reddy</h2>
+
+                <p class="username">@rakeshfit</p>
+
+                <span class="profile-tag"> Intermediate Athlete </span>
+              </div>
+
+              <div class="profile-stats">
+                <div>
+                  <strong> 72 kg </strong>
+
+                  <span> Weight </span>
+                </div>
+
+                <div>
+                  <strong> 178 cm </strong>
+
+                  <span> Height </span>
+                </div>
+
+                <div>
+                  <strong> 22 </strong>
+
+                  <span> Age </span>
+                </div>
+              </div>
+
+              <a href="#settings" class="profile-button">
+                View Profile
+
+                <span> → </span>
+              </a>
+            </article>
+
+            <!-- CALORIES -->
+
+            <article class="card">
+              <div class="card-heading">
+                <div>
+                  <span class="card-label"> CALORIES </span>
+
+                  <h3>1,840</h3>
+                </div>
+
+                <div class="stat-icon orange">🔥</div>
+              </div>
+
+              <p class="metric-text">kcal burned today</p>
+
+              <div class="progress-line">
+                <div class="orange-progress"></div>
+              </div>
+
+              <div class="card-footer">
+                <span> Goal: 2,400 kcal </span>
+
+                <strong> 77% </strong>
+              </div>
+            </article>
+
+            <!-- HEART RATE -->
+
+            <article class="card">
+              <div class="card-heading">
+                <div>
+                  <span class="card-label"> HEART RATE </span>
+
+                  <h3>
+                    72
+                    <small>BPM</small>
+                  </h3>
+                </div>
+
+                <div class="stat-icon red">♥</div>
+              </div>
+
+              <div class="heartbeat">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="card-footer">
+                <span> Resting average </span>
+
+                <strong class="green-text"> Normal </strong>
+              </div>
+            </article>
+
+            <!-- WEEKLY PROGRESS -->
+
+            <article class="card weekly-card">
+              <div class="card-heading">
+                <div>
+                  <span class="card-label"> WEEKLY PROGRESS </span>
+
+                  <h3>78%</h3>
+                </div>
+
+                <span class="week-label"> THIS WEEK </span>
+              </div>
+
+              <div class="week-bars">
+                <div class="day">
+                  <span class="bar" style="height: 48%"> </span>
+
+                  <small> M </small>
+                </div>
+
+                <div class="day">
+                  <span class="bar" style="height: 68%"> </span>
+
+                  <small> T </small>
+                </div>
+
+                <div class="day">
+                  <span class="bar" style="height: 55%"> </span>
+
+                  <small> W </small>
+                </div>
+
+                <div class="day">
+                  <span class="bar" style="height: 85%"> </span>
+
+                  <small> T </small>
+                </div>
+
+                <div class="day today">
+                  <span class="bar" style="height: 95%"> </span>
+
+                  <small> F </small>
+                </div>
+
+                <div class="day">
+                  <span class="bar" style="height: 45%"> </span>
+
+                  <small> S </small>
+                </div>
+
+                <div class="day">
+                  <span class="bar" style="height: 25%"> </span>
+
+                  <small> S </small>
+                </div>
+              </div>
+            </article>
+
+            <!-- DAILY ACTIVITY -->
+
+            <article class="card">
+              <div class="card-heading">
+                <div>
+                  <span class="card-label"> DAILY ACTIVITY </span>
+
+                  <h3>8,642</h3>
+                </div>
+
+                <div class="stat-icon green">↗</div>
+              </div>
+
+              <p class="metric-text">steps completed</p>
+
+              <div class="activity-bottom">
+                <div class="circle-progress">
+                  <div>86%</div>
+                </div>
+
+                <div class="activity-details">
+                  <p>
+                    <span></span>
+                    Goal 10,000
+                  </p>
+
+                  <p>
+                    <span></span>
+                    Distance 6.4 km
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- WORKOUT -->
+
+            <article class="card workout-card">
+              <div class="workout-header">
+                <div>
+                  <span class="card-label"> TODAY'S WORKOUT </span>
+
+                  <h3>Upper Body Strength</h3>
+                </div>
+
+                <div class="workout-number">04</div>
+              </div>
+
+              <div class="workout-info">
+                <div>
+                  <strong> 45 </strong>
+
+                  <span> MINUTES </span>
+                </div>
+
+                <div>
+                  <strong> 320 </strong>
+
+                  <span> KCAL </span>
+                </div>
+
+                <div>
+                  <strong> 8 </strong>
+
+                  <span> EXERCISES </span>
+                </div>
+              </div>
+
+              <a href="#workouts" class="start-button">
+                Start Workout
+
+                <span> → </span>
+              </a>
+            </article>
+
+            <!-- HYDRATION -->
+
+            <article class="card hydration-card">
+              <div class="hydration-icon">💧</div>
+
+              <div class="hydration-content">
+                <span class="card-label"> HYDRATION </span>
+
+                <h3>
+                  1.8
+                  <small> / 2.5 L </small>
+                </h3>
+
+                <div class="water-progress">
+                  <div></div>
+                </div>
+
+                <p>72% of your daily goal</p>
+              </div>
+            </article>
+
+            <!-- STREAK -->
+
+            <article class="card streak-card">
+              <div>
+                <span class="card-label"> CURRENT STREAK </span>
+
+                <div class="streak-number">
+                  12
+                  <span> DAYS </span>
+                </div>
+
+                <p>Keep going! You're building a great habit.</p>
+              </div>
+
+              <div class="fire">🔥</div>
+            </article>
+
+            <!-- ACHIEVEMENTS -->
+
+            <article class="card achievements-card">
+              <div class="card-heading">
+                <div>
+                  <span class="card-label"> ACHIEVEMENTS </span>
+
+                  <h3>Recent badges</h3>
+                </div>
+
+                <a href="#progress" class="view-all"> View all → </a>
+              </div>
+
+              <div class="badges">
+                <div class="badge">
+                  <div>🏃</div>
+
+                  <span> Runner </span>
+                </div>
+
+                <div class="badge">
+                  <div>💪</div>
+
+                  <span> Strong </span>
+                </div>
+
+                <div class="badge">
+                  <div>🔥</div>
+
+                  <span> 12 Day </span>
+                </div>
+
+                <div class="badge">
+                  <div>💧</div>
+
+                  <span> Hydrated </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ==================================================
+             ACTIVITY PAGE
+        =================================================== -->
+
+        <section id="activity" class="page-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">ACTIVITY</p>
+
+              <h1>Your Daily Activity</h1>
+
+              <p class="subtitle">Track your movement and daily goals.</p>
+            </div>
+
+            <div class="date-box">September 25, 2026</div>
+          </div>
+
+          <div class="activity-grid">
+            <article class="big-activity-card">
+              <span class="card-label"> TODAY'S STEPS </span>
+
+              <h2>8,642</h2>
+
+              <p>steps completed</p>
+
+              <div class="large-circle">
+                <div>
+                  <strong> 86% </strong>
+
+                  <span> GOAL </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="activity-stat">
+              <div class="stat-icon green">🚶</div>
+
+              <span> WALKING </span>
+
+              <strong> 6.4 km </strong>
+
+              <small> +12% this week </small>
+            </article>
+
+            <article class="activity-stat">
+              <div class="stat-icon orange">🔥</div>
+
+              <span> CALORIES </span>
+
+              <strong> 1,840 </strong>
+
+              <small> 77% of goal </small>
+            </article>
+
+            <article class="activity-stat">
+              <div class="stat-icon red">♥</div>
+
+              <span> HEART RATE </span>
+
+              <strong> 72 BPM </strong>
+
+              <small> Normal range </small>
+            </article>
+
+            <article class="activity-history">
+              <span class="card-label"> ACTIVITY HISTORY </span>
+
+              <h2>This Week</h2>
+
+              <div class="history-bars">
+                <div>
+                  <span style="height: 55%"></span>
+                  <small>MON</small>
+                </div>
+
+                <div>
+                  <span style="height: 72%"></span>
+                  <small>TUE</small>
+                </div>
+
+                <div>
+                  <span style="height: 62%"></span>
+                  <small>WED</small>
+                </div>
+
+                <div>
+                  <span style="height: 88%"></span>
+                  <small>THU</small>
+                </div>
+
+                <div class="current">
+                  <span style="height: 96%"></span>
+                  <small>FRI</small>
+                </div>
+
+                <div>
+                  <span style="height: 45%"></span>
+                  <small>SAT</small>
+                </div>
+
+                <div>
+                  <span style="height: 35%"></span>
+                  <small>SUN</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ==================================================
+             WORKOUTS PAGE
+        =================================================== -->
+
+        <section id="workouts" class="page-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">WORKOUTS</p>
+
+              <h1>Training Center</h1>
+
+              <p class="subtitle">Choose a workout and keep moving.</p>
+            </div>
+          </div>
+
+          <div class="workout-grid">
+            <article class="workout-large">
+              <div class="workout-number">01</div>
+
+              <span class="workout-type"> STRENGTH </span>
+
+              <h2>Upper Body</h2>
+
+              <p>Build strength across your chest, shoulders and arms.</p>
+
+              <div class="workout-meta">
+                <span> ⏱ 45 min </span>
+
+                <span> 🔥 320 kcal </span>
+              </div>
+
+              <button>Start Workout →</button>
+            </article>
+
+            <article class="workout-small">
+              <span> CARDIO </span>
+
+              <h2>HIIT Burn</h2>
+
+              <p>30 minutes</p>
+
+              <strong> 🔥 280 kcal </strong>
+            </article>
+
+            <article class="workout-small blue-card">
+              <span> CARDIO </span>
+
+              <h2>Morning Run</h2>
+
+              <p>35 minutes</p>
+
+              <strong> 🏃 4.5 km </strong>
+            </article>
+
+            <article class="workout-small purple-card">
+              <span> RECOVERY </span>
+
+              <h2>Full Stretch</h2>
+
+              <p>20 minutes</p>
+
+              <strong> 🧘 Mobility </strong>
+            </article>
+
+            <article class="workout-small green-card">
+              <span> STRENGTH </span>
+
+              <h2>Leg Day</h2>
+
+              <p>50 minutes</p>
+
+              <strong> 💪 410 kcal </strong>
+            </article>
+          </div>
+        </section>
+
+        <!-- ==================================================
+             PROGRESS PAGE
+        =================================================== -->
+
+        <section id="progress" class="page-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">PROGRESS</p>
+
+              <h1>Your Progress</h1>
+
+              <p class="subtitle">Small improvements create big results.</p>
+            </div>
+          </div>
+
+          <div class="progress-grid">
+            <article class="progress-main">
+              <span class="card-label"> FITNESS SCORE </span>
+
+              <div class="fitness-score">
+                82
+                <small>/100</small>
+              </div>
+
+              <p>You're making excellent progress this month.</p>
+
+              <div class="score-line">
+                <div></div>
+              </div>
+            </article>
+
+            <article class="progress-stat">
+              <span class="card-label"> WORKOUTS </span>
+
+              <strong> 18 </strong>
+
+              <small> +4 this month </small>
+            </article>
+
+            <article class="progress-stat">
+              <span class="card-label"> ACTIVE HOURS </span>
+
+              <strong> 14.5 </strong>
+
+              <small> +18% this month </small>
+            </article>
+
+            <article class="progress-stat">
+              <span class="card-label"> LONGEST STREAK </span>
+
+              <strong> 21 </strong>
+
+              <small> days </small>
+            </article>
+
+            <article class="progress-chart">
+              <span class="card-label"> MONTHLY PERFORMANCE </span>
+
+              <h2>September</h2>
+
+              <div class="month-chart">
+                <div>
+                  <span style="height: 42%"></span>
+                  <small>1</small>
+                </div>
+
+                <div>
+                  <span style="height: 55%"></span>
+                  <small>5</small>
+                </div>
+
+                <div>
+                  <span style="height: 48%"></span>
+                  <small>10</small>
+                </div>
+
+                <div>
+                  <span style="height: 70%"></span>
+                  <small>15</small>
+                </div>
+
+                <div>
+                  <span style="height: 82%"></span>
+                  <small>20</small>
+                </div>
+
+                <div class="chart-current">
+                  <span style="height: 94%"></span>
+                  <small>25</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="goals-card">
+              <span class="card-label"> MONTHLY GOALS </span>
+
+              <h2>4 / 5 completed</h2>
+
+              <div class="goal">
+                <span> 20 Workouts </span>
+
+                <strong> 18/20 </strong>
+
+                <div>
+                  <i style="width: 90%"></i>
+                </div>
+              </div>
+
+              <div class="goal">
+                <span> 100K Steps </span>
+
+                <strong> 86K </strong>
+
+                <div>
+                  <i style="width: 86%"></i>
+                </div>
+              </div>
+
+              <div class="goal">
+                <span> 30L Water </span>
+
+                <strong> 26L </strong>
+
+                <div>
+                  <i style="width: 87%"></i>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ==================================================
+             SETTINGS PAGE
+        =================================================== -->
+
+        <section id="settings" class="page-section">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">SETTINGS</p>
+
+              <h1>Account Settings</h1>
+
+              <p class="subtitle">Manage your profile and preferences.</p>
+            </div>
+          </div>
+
+          <div class="settings-grid">
+            <!-- PROFILE SETTINGS -->
+
+            <article class="settings-card profile-settings">
+              <div class="settings-profile">
+                <div class="large-avatar">RR</div>
+
+                <div>
+                  <h2>Rakesh Reddy</h2>
+
+                  <p>@rakeshfit</p>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label> Full Name </label>
+
+                  <input type="text" value="Rakesh Reddy" />
+                </div>
+
+                <div class="form-group">
+                  <label> Username </label>
+
+                  <input type="text" value="@rakeshfit" />
+                </div>
+
+                <div class="form-group">
+                  <label> Height </label>
+
+                  <input type="text" value="178 cm" />
+                </div>
+
+                <div class="form-group">
+                  <label> Weight </label>
+
+                  <input type="text" value="72 kg" />
+                </div>
+              </div>
+
+              <button class="save-button">Save Changes</button>
+            </article>
+
+            <!-- PREFERENCES -->
+
+            <article class="settings-card">
+              <span class="card-label"> PREFERENCES </span>
+
+              <h2>App Preferences</h2>
+
+              <div class="setting-row">
+                <div>
+                  <strong> Daily Reminders </strong>
+
+                  <small> Workout reminder notifications </small>
+                </div>
+
+                <div class="toggle active-toggle">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="setting-row">
+                <div>
+                  <strong> Weekly Report </strong>
+
+                  <small> Receive your weekly progress </small>
+                </div>
+
+                <div class="toggle active-toggle">
+                  <span></span>
+                </div>
+              </div>
+
+              <div class="setting-row">
+                <div>
+                  <strong> Sound Effects </strong>
+
+                  <small> Workout sounds and alerts </small>
+                </div>
+
+                <div class="toggle">
+                  <span></span>
+                </div>
+              </div>
+            </article>
+
+            <!-- ACCOUNT -->
+
+            <article class="settings-card">
+              <span class="card-label"> ACCOUNT </span>
+
+              <h2>Account Management</h2>
+
+              <a href="#dashboard" class="setting-link">
+                ← Back to Dashboard
+              </a>
+
+              <a href="#settings" class="setting-link">
+                Privacy & Security →
+              </a>
+
+              <a href="#settings" class="setting-link"> Help Center → </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+          <span> © 2026 PulseFit </span>
+
+          <span> Train smart. Live strong. </span>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
